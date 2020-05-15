@@ -39,3 +39,6 @@ Just an example of how to use. You can choose whatever parameters you like for t
 
 xref: [How to Argue like Cobalt Strike](https://blog.xpnsec.com/how-to-argue-like-cobalt-strike/)
 
+Special Thanks to fuzzysec/rastamouse for their code and projects.  This isn't really anything new. Its simply an adaptation.
+
+
