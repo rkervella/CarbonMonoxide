@@ -13,3 +13,10 @@ Essentially combining these elements:
 
 ```
 
+Its a bit easier than I thought. I went ahead and submitted a PR request.  The code here is just fragments. 
+
+https://github.com/rasta-mouse/TikiTorch/pull/13
+
+See this for example.
+
+
